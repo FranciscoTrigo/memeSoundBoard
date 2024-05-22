@@ -1,9 +1,9 @@
 <button id="lieDetector">Ian</button>
-<button>Test</button>
+<button id="correct">Correct</button>
 
 <style>
 *{
-    margin: 0;
+    margin: 5;
     padding: 0;
     border: none;
     box-sizing: border-box;
@@ -40,7 +40,12 @@
 
 <script>
 const lieDetector = new Audio("./lieDetector.mp3");
+const correctDetector = new Audio("./correctDetector.mp3");
 const buttons = document.querySelectorAll("button");
+
+document.getElementById("correct").addEventListener("click", () => {
+    correctDetector.play(); 
+      })
 
 document.getElementById("lieDetector").addEventListener("click", () => {
 lieDetector.play(); 
