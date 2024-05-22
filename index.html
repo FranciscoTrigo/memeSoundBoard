@@ -1,4 +1,5 @@
-<button>Ian</button>
+<button id="lieDetector">Ian</button>
+<button>Test</button>
 
 <style>
 *{
@@ -36,13 +37,13 @@
     background: #053056;
     }
 </style>
+
 <script>
-const audio = new Audio("./lieDetector.mp3");
+const lieDetector = new Audio("./lieDetector.mp3");
 const buttons = document.querySelectorAll("button");
 
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    audio.play();
-  });
-});
+document.getElementById("lieDetector").addEventListener("click", () => {
+lieDetector.play(); 
+  })
+
 </script>
