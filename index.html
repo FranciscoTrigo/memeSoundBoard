@@ -1,90 +1,14 @@
 <!DOCTYPE html>
-<html>
-  <title>Meme Sound board</title>
-  
-<button id="lieDetector">Ian</button>
-<button id="correct">Correct</button>
-<button id="mgsAlert">MGS Alert</button>
-<button id="animeWow">Anime Wow</button>
-<button id="howYouAre">They ask how you are</button>
-<button id="mrKrabs">Don Cangrejo</button>
-<button id="skeleton">Skeleton</button>
-
-<style>
-*{
-    margin: 1rem;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-    }
-    
-    html,
-    body {
-    height: 100%;
-    }
-    
-    body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #23271d;
-    }
-    
-    button {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    color: #fff;
-    background: #034d85;
-    padding: 1.1rem;
-    border-radius: .2rem;
-    transition: opacity .2s;
-    }
-    
-    button:hover {
-    cursor: pointer;
-    background: #560532;
-    }
-</style>
-
-<script>
-const mgsAlert = new Audio("./mgsAlert.mp3");
-const animeWow = new Audio("./animeWow.mp3");
-const howYouAre = new Audio("./theyaskyouhowyouare.mp3");
-const lieDetector = new Audio("./lieDetector.mp3");
-const correctDetector = new Audio("./correctDetector.mp3");
-const mrKrabs = new Audio("./mrKrabs.mp3");
-const skeleton = new Audio("./skeleton.mp3");
-
-const buttons = document.querySelectorAll("button");
-
-document.getElementById("mrKrabs").addEventListener("click", () => {
-  mrKrabs.play(); 
-    })
-
-document.getElementById("skeleton").addEventListener("click", () => {
-      skeleton.play(); 
-        })
-document.getElementById("animeWow").addEventListener("click", () => {
-  animeWow.play(); 
-    })
-
-document.getElementById("mgsAlert").addEventListener("click", () => {
-      mgsAlert.play(); 
-        })
-
-document.getElementById("howYouAre").addEventListener("click", () => {
-      howYouAre.play(); 
-        })
-
-document.getElementById("correct").addEventListener("click", () => {
-    correctDetector.play(); 
-      })
-
-document.getElementById("lieDetector").addEventListener("click", () => {
-lieDetector.play(); 
-  })
-
-</script>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soundboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Soundboard</h1>
+  <div id="soundboard"></div>
+  <script src="script.js"></script>
+</body>
 </html>

@@ -1,0 +1,9 @@
+[
+    { "label": "Lie Detector", "file": "sounds/lieDetector.mp3" },
+    { "label": "Correct", "file": "sounds/correctDetector.mp3" },
+    { "label": "Anime Wow", "file": "sounds/animeWow.mp3" },
+    { "label": "MGS Alert", "file": "sounds/mgsALert.mp3" },
+    { "label": "How are you", "file": "sounds/theyaskyouhowyouare.mp3" },
+    { "label": "Mr Krabs", "file": "sounds/mrKrabs.mp3" },
+    { "label": "Skeleton", "file": "sounds/skeleton.mp3" }
+]  
